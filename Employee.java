@@ -5,8 +5,16 @@ public class Employee
  {
   System.out.println("Welcome to Employee Wage Computation Problem");
   Employee e=new Employee();
-  e.check();
-  e.part();
+  int ch=e.random;
+  switch(ch)
+  {
+  case 0:
+   e.check();
+   break;
+  case 1:
+   e.part();
+   break;
+  }
  }
   Random r=new Random();
   int random=r.nextInt(2);
