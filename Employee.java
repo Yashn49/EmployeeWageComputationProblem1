@@ -4,24 +4,15 @@ public class Employee
  public static void main(String[] args)
  {
   System.out.println("Welcome to Employee Wage Computation Problem");
-  Random r=new Random();
-  int random=r.nextInt(2);
-  System.out.println(random);
-  if(random==1)
-  {
-   System.out.println("Employee is present");
-  }
-  else
-  {
-   System.out.println("Employee is absent");
-  }
   Employee e=new Employee();
   e.check();
+  e.part();
  }
- public void check()
- {
   Random r=new Random();
   int random=r.nextInt(2);
+  int part=r.nextInt(2);
+ public void check()
+ {
   if(random==1)
   {
    System.out.println("Employe is present");
@@ -34,4 +25,19 @@ public class Employee
    System.out.println("Employee is absent");
   }
  }
+ public void part()
+ {
+  if(part==1)
+  {
+   System.out.println("Employee is working parttime");
+   System.out.println("Wage/Hr=20 and Parttimehours=8");
+   int wage=20*8;
+   System.out.println("PARTTIMEWAGE WILL BE="+ wage);
+  }
+  else
+  {
+   System.out.println("EMPLOYEE IS NOT DOING PART TIME TODAY");
+  }
+ }
 }
+
